@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 //defining the Article Schema
-const uri = "mongodb+srv://admin:AECa6Br9n683rst@cluster0.b8koz.mongodb.net/wikiDB?retryWrites=true&w=majority";
+const uri = "mongodb://root:root@mongo:27017/wikiDB?retryWrites=true&w=majority&authSource=admin";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // creating schemas
